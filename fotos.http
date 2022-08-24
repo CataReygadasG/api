@@ -1,0 +1,28 @@
+//peticiones http
+GET http://localhost:3000/fotos
+###
+GET http://localhost:3000/fotos/1
+
+@api = http://localhost:3000
+### Create a foto
+POST http://localhost:3000/fotos
+Content-Type: application/json
+
+{
+    "url": "https://i.blogs.es/d3bbed/pulseras-pandora-nina/450_1000.jpeg",
+    "title":"Joyas",
+    "description": "joyas de plata"
+}
+
+
+###
+GET http:/localhost:3000/fotos/1
+
+###
+DELETE http:/localhost:3000/fotos/1
+
+###
+DELETE http:/localhost:3000/fotos
+
+###
+PUT  http:/localhost:3000/fotos/1
